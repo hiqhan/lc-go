@@ -23,7 +23,7 @@ func walk(ln *ListNode, ch chan int) {
 	close(ch)
 }
 
-func Walk(ln *ListNode) string {
+func str(ln *ListNode) string {
 	ch := make(chan int)
 	go walk(ln, ch)
 	var s string
@@ -64,12 +64,13 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	if carry > 0 {
 		curr.Next = &ListNode{1, nil}
 	}
-	return dummyHead
+	return dummyHead.Next
 }
 
 func main() {
 	a := ListNode{9, nil}
 	b := ListNode{9, nil}
-	c := ListNode{1, nil}
-	fmt.Println(Walk(addTwoNumbers(&a, &c)))
+	// c := ListNode{1, nil}
+	a.Next = &b
+	fmt.Println(str(addTwoNumbers(&a, &a)))
 }
