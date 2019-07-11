@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package leetcode
 
 func reverse(x int) int {
 	var rev int32
@@ -16,9 +14,6 @@ func reverse(x int) int {
 	}
 }
 
-func main() {
-	data := []int{123, -123, 1200, 0, 1534236469}
-	for _, i := range data {
-		fmt.Println(i, reverse(i))
-	}
+func Reverse(x int) int {
+	return reverse(x)
 }

@@ -1,9 +1,6 @@
-package main
+package leetcode
 
-import (
-	"fmt"
-	"strings"
-)
+import "strings"
 
 /*
 simple solution: count max length at every character by iterating the given string
@@ -35,6 +32,10 @@ simple solution: count max length at every character by iterating the given stri
 // 	return max
 // }
 
+func LengthOfLongestSubstring(s string) int {
+	return lengthOfLongestSubstring(s)
+}
+
 func lengthOfLongestSubstring(s string) int {
 	begin, max := 0, 0
 	for i, c := range s {
@@ -55,11 +56,4 @@ func lengthOfLongestSubstring(s string) int {
 		max = offset
 	}
 	return max
-}
-
-func main() {
-	data := []string{"museuwzbczdejna", "bbb", "abcabcd"}
-	for _, s := range data {
-		fmt.Println(lengthOfLongestSubstring(s))
-	}
 }

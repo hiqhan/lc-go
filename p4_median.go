@@ -1,9 +1,10 @@
-package main
+package leetcode
 
-import (
-	"fmt"
-	"math"
-)
+import "math"
+
+func FindMedianSortedArrays(nums1 []int, nums2 []int) float64 {
+	return findMedianSortedArrays(nums1, nums2)
+}
 
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	if len(nums1) > len(nums2) {
@@ -55,17 +56,4 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 		}
 	}
 	return float64(0)
-}
-
-func main() {
-	a1 := []int{10, 20, 30, 40, 50}
-	a2 := []int{51, 61, 71, 81, 91}
-	a3 := []int{1, 6, 7, 8}
-	a4 := []int{2, 3, 4, 5}
-	a5 := []int{3, 4, 5}
-	a6 := []int{1, 2, 6, 7, 8}
-	fmt.Println(findMedianSortedArrays(a1, a2))
-	fmt.Println(findMedianSortedArrays(a1, a3))
-	fmt.Println(findMedianSortedArrays(a3, a4))
-	fmt.Println(findMedianSortedArrays(a5, a6))
 }

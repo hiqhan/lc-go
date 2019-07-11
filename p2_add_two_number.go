@@ -1,9 +1,6 @@
-package main
+package leetcode
 
-import (
-	"fmt"
-	"strconv"
-)
+import "strconv"
 
 type ListNode struct {
 	Val  int
@@ -67,10 +64,10 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	return dummyHead.Next
 }
 
-func main() {
-	a := ListNode{9, nil}
-	b := ListNode{9, nil}
-	// c := ListNode{1, nil}
-	a.Next = &b
-	fmt.Println(str(addTwoNumbers(&a, &a)))
+func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+	return addTwoNumbers(l1, l2)
+}
+
+func (l *ListNode) String() string {
+	return str(l)
 }
