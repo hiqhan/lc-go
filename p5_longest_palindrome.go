@@ -1,8 +1,9 @@
 package leetcode
 
-func LongestPalindrome(s string) string {
-	return longestPalindrome(s)
-}
+// LongestPalindrome find the longest palindrome substring
+// func LongestPalindrome(s string) string {
+// 	return longestPalindrome(s)
+// }
 
 func longestPalindrome(s string) string {
 	result := make([][]bool, len(s))

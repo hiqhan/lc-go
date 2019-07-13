@@ -8,7 +8,7 @@ func TestAddTwoNumbers(t *testing.T) {
 	a.Next = &b
 	c := ListNode{1, nil}
 	expect := string("001")
-	if got := AddTwoNumbers(&a, &c); got.String() != expect {
+	if got := addTwoNumbers(&a, &c); got.String() != expect {
 		t.Errorf("AddTwoNumbers(%v %v) = %v; want %s", a, c, got, expect)
 	}
 }

@@ -1,9 +1,5 @@
 package leetcode
 
-func TwoSum(nums []int, target int) []int {
-	return twoSum(nums, target)
-}
-
 func twoSum(nums []int, target int) []int {
 	checked := make(map[int]int)
 	for i, n := range nums {

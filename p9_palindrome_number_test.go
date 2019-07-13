@@ -7,15 +7,15 @@ func TestIsPalindrome(t *testing.T) {
 	var expect bool
 
 	x, expect = 121, true
-	if got := IsPalindrome(x); got != expect {
+	if got := isPalindrome(x); got != expect {
 		t.Errorf("IsPalindrome(%d) = %t; want %t", x, got, expect)
 	}
 	x, expect = -121, false
-	if got := IsPalindrome(x); got != expect {
+	if got := isPalindrome(x); got != expect {
 		t.Errorf("IsPalindrome(%d) = %t; want %t", x, got, expect)
 	}
 	x, expect = 10, false
-	if got := IsPalindrome(x); got != expect {
+	if got := isPalindrome(x); got != expect {
 		t.Errorf("IsPalindrome(%d) = %t; want %t", x, got, expect)
 	}
 }

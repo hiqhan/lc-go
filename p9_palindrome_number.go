@@ -14,6 +14,6 @@ func isPalindrome(x int) bool {
 }
 
 // IsPalindrome Judge a given number is a palindrome or not
-func IsPalindrome(x int) bool {
-	return isPalindrome(x)
-}
+// func IsPalindrome(x int) bool {
+// 	return isPalindrome(x)
+// }

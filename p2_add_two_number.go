@@ -64,10 +64,6 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	return dummyHead.Next
 }
 
-func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	return addTwoNumbers(l1, l2)
-}
-
 func (l *ListNode) String() string {
 	return str(l)
 }

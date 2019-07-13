@@ -14,6 +14,7 @@ func reverse(x int) int {
 	}
 }
 
-func Reverse(x int) int {
-	return reverse(x)
-}
+// Reverse a given number
+// func Reverse(x int) int {
+// 	return reverse(x)
+// }

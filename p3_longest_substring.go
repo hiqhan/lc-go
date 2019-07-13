@@ -32,10 +32,6 @@ simple solution: count max length at every character by iterating the given stri
 // 	return max
 // }
 
-func LengthOfLongestSubstring(s string) int {
-	return lengthOfLongestSubstring(s)
-}
-
 func lengthOfLongestSubstring(s string) int {
 	begin, max := 0, 0
 	for i, c := range s {
