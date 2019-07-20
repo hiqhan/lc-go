@@ -1,4 +1,4 @@
-package main
+package leetcode
 
 import "fmt"
 
@@ -77,19 +77,19 @@ func printBoard(b [][]byte) {
 	}
 }
 
-func main() {
-	board := [][]byte{
-		[]byte(string("53..7....")),
-		[]byte(string("6..195...")),
-		[]byte(string(".98....6.")),
-		[]byte(string("8...6...3")),
-		[]byte(string("4..8.3..1")),
-		[]byte(string("7...2...6")),
-		[]byte(string(".6....28.")),
-		[]byte(string("...419..5")),
-		[]byte(string("....8..79")),
-	}
-	if solveSudoku(board) {
-		printBoard(board)
-	}
-}
+// func main() {
+// 	board := [][]byte{
+// 		[]byte(string("53..7....")),
+// 		[]byte(string("6..195...")),
+// 		[]byte(string(".98....6.")),
+// 		[]byte(string("8...6...3")),
+// 		[]byte(string("4..8.3..1")),
+// 		[]byte(string("7...2...6")),
+// 		[]byte(string(".6....28.")),
+// 		[]byte(string("...419..5")),
+// 		[]byte(string("....8..79")),
+// 	}
+// 	if solveSudoku(board) {
+// 		printBoard(board)
+// 	}
+// }
